@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating FrontEnd Mentor Accessibility Challenge 1</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <meta name="author" content="Philippe Tschanun">
+    <meta name="description" content="Accessibility Challenge 1">
+    <meta name="keywords" content="frontend: htlm, css, js">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <!-- rating -->
+        <section id="rating" class="section-rating-switch" aria-hidden="false">
+            <div class="rond">
+                <img src="assets/images/icon-star.svg" alt="icon star" aria-hidden="true">
+            </div>
+            
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request.
+                All feedback is appreciated to help us
+                improve our offering!</p>
+            <div class="button-row" aria-label="Rating selection">
+                <button type="button" class="rond grey500" aria-label="Rate 1 out of 5">1</button>
+                <button type="button" class="rond grey500" aria-label="Rate 2 out of 5">2</button>
+                <button type="button" class="rond grey500" aria-label="Rate 3 out of 5">3</button>
+                <button type="button" class="rond grey500" aria-label="Rate 4 out of 5">4</button>
+                <button type="button" class="rond grey500" aria-label="Rate 5 out of 5">5</button>
+            </div>
+            </div>
+            <button type="submit" class="submit">SUBMIT</button>
+        </section>
+
+        <!-- thanks -->
+        <section id="thanks" class="section-thanks-wrapper-switch" aria-hidden="true">
+            <img src="assets/images/illustration-thank-you.svg" alt="thanks illustration">
+            <p id="result" class="result-box">You selected 4 out of 5</p>
+            <h1>Thank you!</h1>
+            <p class="text-center">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </section>
+    </main>
+</body>
