@@ -92,13 +92,13 @@ main {
 }
 
 .button-row .rond:hover,
-.button-row .rond:focus-visible {
+.button-row .rond:focus-visible{
+
     background-color: var(--white);
     color: var(--black);
 }
             
-
-.button-row .rond .selected {
+.selected {
     background-color: var(--orange500);
     color: var(--white);
     outline: none;
